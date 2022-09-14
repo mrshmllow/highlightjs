@@ -1,7 +1,7 @@
 @use "palette" as catppuccin;
 
 @each $flavour, $color in catppuccin.$palette {
-    .#{$flavour} {
+    .ctp-#{$flavour} {
         code,
         .hljs {
             background: #{map-get($color, "mantle")};
